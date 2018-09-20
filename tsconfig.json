@@ -8,6 +8,7 @@
 		"sourceMap": true,
 		"outDir": "server/build",
 		"baseUrl": "./server",
+		"jsx": "react",
 		"paths": {
 			"*": [
 				"node_modules/*"
