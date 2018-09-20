@@ -1,0 +1,9 @@
+{
+	"extends": ["react-app", "plugin:import/errors", "plugin:import/warnings"],
+	"rules": {
+		"operator-assignment": 0,
+		"jsx-a11y/alt-text": 0,
+		"import/no-named-as-default-member": 0,
+		"import/no-named-as-default": 0
+	}
+}

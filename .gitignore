@@ -1,3 +1,7 @@
+build/
+
+config.json
+
 # Logs
 logs
 *.log
