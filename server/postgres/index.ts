@@ -1,4 +1,7 @@
 import pgp from 'pg-promise';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 const dbUser = process.env.dbUser;
 const dbPassword = process.env.dbPassword;

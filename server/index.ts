@@ -1,13 +1,10 @@
 import 'babel-polyfill';
-import dotenv from 'dotenv';
 import express from 'express';
 import { ApolloServer } from 'apollo-server-express';
 import schema from './graphql';
 import * as fs from 'fs';
 import * as https from 'https';
 import * as http from 'http';
-
-dotenv.config({ path: '../.env' });
 
 type Config = { ssl: boolean; port: number; hostname: string };
 const configurations: { [key: string]: Config } = {
