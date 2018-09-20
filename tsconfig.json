@@ -6,18 +6,19 @@
 		"noImplicitAny": true,
 		"moduleResolution": "node",
 		"sourceMap": true,
-		"outDir": "build",
-		"baseUrl": ".",
+		"outDir": "server/build",
+		"baseUrl": "./server",
 		"paths": {
 			"*": [
 				"node_modules/*"
 			]
 		},
 		"lib": [
-			"esnext"
+			"esnext",
+			"dom"
 		]
 	},
 	"include": [
-		"*"
+		"server/*"
 	]
 }

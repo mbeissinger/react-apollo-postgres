@@ -1,4 +1,6 @@
+// @ts-ignore
 import pgp from 'pg-promise';
+// @ts-ignore
 import config from '../../config.json';
 
 export const connectionString = `postgres://${config.dbUser}:${

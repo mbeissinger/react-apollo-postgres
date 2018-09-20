@@ -1,5 +1,3 @@
-import db from './postgres';
-
 const data = [
 	{ title: 'The Hobbit', author: 'J.R.R. Tolkien' },
 	{ title: 'Harry Potter', author: 'JK Rowling' },
