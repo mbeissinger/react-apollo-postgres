@@ -21,10 +21,10 @@ class Author {
 
 const resolvers = {
 	Query: {
-		getAuthors: () => data.map(d => new Author(d.author)),
-		getBooks(root: any, args: any, context: any, info: any) {
-			if (!!args.name) {
-				return new Author(args.name).books();
+		authors: () => data.map(d => new Author(d.author)),
+		books(root: any, args: any, context: any, info: any) {
+			if (!!args.author) {
+				return new Author(args.author).books();
 			}
 			return data.map(d => new Book(d.title, d.author));
 		},

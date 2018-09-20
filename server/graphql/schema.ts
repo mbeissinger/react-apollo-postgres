@@ -12,8 +12,8 @@ const schema = gql`
 	}
 
 	type Query {
-		getBooks(author: String): [Book]
-		getAuthors: [Author]
+		books(author: String): [Book]
+		authors: [Author]
 	}
 `;
 

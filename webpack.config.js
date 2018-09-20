@@ -35,6 +35,7 @@ module.exports = {
 				enforce: 'pre',
 				test: /\.js$/,
 				loader: 'source-map-loader',
+				exclude: [/node_modules/, /build/, /__test__/],
 			},
 			{
 				test: /\.scss$/,
@@ -50,7 +51,7 @@ module.exports = {
 		],
 	},
 	resolve: {
-		extensions: ['.ts', '.tsx', '.js'],
+		extensions: ['.ts', '.tsx', '.mjs', '.js'],
 	},
 	output: {
 		filename: 'index.js',

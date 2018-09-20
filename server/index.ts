@@ -9,8 +9,16 @@ import * as http from 'http';
 type Config = { ssl: boolean; port: number; hostname: string };
 const configurations: { [key: string]: Config } = {
 	// Note: You may need sudo to run on port 443
-	production: { ssl: true, port: 443, hostname: 'example.com' },
-	development: { ssl: false, port: 4000, hostname: 'localhost' },
+	production: {
+		ssl: true,
+		port: 443,
+		hostname: 'example.com',
+	},
+	development: {
+		ssl: false,
+		port: 4000,
+		hostname: 'localhost',
+	},
 };
 
 const environment = process.env.NODE_ENV || 'development';
